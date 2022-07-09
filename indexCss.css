@@ -65,7 +65,7 @@ body {
     border: none;
     outline: none;
     height: 35px;
-    width: 92%;
+    width: 90%;
     border-radius: 5px 0 0 5px;
     padding-left: 10px;
     letter-spacing: 1px;
@@ -74,7 +74,7 @@ body {
 .header .search button {
     float: right;
     height: 35px;
-    width: 6%;
+    width: 7%;
     padding: 6px 10px;
     font-size: 16px;
     border: none;
@@ -95,7 +95,7 @@ body {
     margin-right: 10px;
     margin-top: 10px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
 }
 
@@ -111,7 +111,7 @@ body {
 .background {
     height: 43%;
     width: 100%;
-    background-image: linear-gradient(0deg, rgba(36, 44, 51, 0.5), rgba(36, 44, 51, 0.5)), url(dyson_vacuum_3.jpg);
+    background-image: linear-gradient(0deg, rgba(36, 44, 51, 0.5), rgba(36, 44, 51, 0.5)), url(pictures/dyson_vacuum_3.jpg);
     background-repeat: no-repeat;
 }
 
@@ -121,6 +121,8 @@ body {
     color: white;
 }
 
+
+/*
 .sidenav {
     position: fixed;
     padding-right: 10px;
@@ -139,7 +141,7 @@ body {
 
 .sidenav a:hover {
     color: #ddd;
-}
+} */
 
 .items {
     height: 100%;
@@ -167,4 +169,22 @@ body {
     margin-left: 10px;
     font-size: 25px;
     font-weight: 500;
+}
+
+footer {
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 12px;
+}
+
+footer div a {
+    font-size: 40px;
+    margin-right: 20px;
+    color: white;
+}
+
+footer div a:hover {
+    color: rgb(200, 200, 200)
 }
