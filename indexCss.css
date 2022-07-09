@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body {
+    height: 120vh;
+    margin: auto
+}
+
+.header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.header img {
+    padding: 2px;
+    height: 35px;
+    float: left;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.header span {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    font-size: 25px;
+    font-weight: 500;
+    color: white
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .search {
+    display: inline;
+    width: 30%;
+}
+
+.header .navigation {
+    float: right;
+}
+
+.header .search form {
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.header .search input {
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 92%;
+    border-radius: 5px 0 0 5px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.header .search button {
+    float: right;
+    height: 35px;
+    width: 6%;
+    padding: 6px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+}
+
+.header .search button:hover {
+    background-color: #ddd;
+}
+
+.header ul li {
+    width: 80px;
+    float: right;
+    text-align: center;
+    opacity: 0.8;
+    padding: 7px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.header ul li:hover {
+    background-color: darkblue;
+}
+
+.background {
+    height: 43%;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(36, 44, 51, 0.5), rgba(36, 44, 51, 0.5)), url(dyson_vacuum_3.jpg);
+    background-repeat: no-repeat;
+}
+
+.background h1 {
+    font-weight: 500;
+    font-size: 50px;
+    color: white;
+}
+
+.sidenav {
+    position: fixed;
+    padding-right: 10px;
+    bottom: 40%;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: dodgerblue;
+}
+
+.sidenav a {
+    font-size: 40px;
+    display: block;
+    color: white;
+    margin-left: 10px;
+}
+
+.sidenav a:hover {
+    color: #ddd;
+}
+
+.items {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items .services {
+    width: 70vw;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    margin-top: -100px;
+}
+
+.items .services div {
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    height: 32vh;
+}
+
+.services .title {
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
