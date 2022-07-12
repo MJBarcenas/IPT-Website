@@ -7,6 +7,7 @@
 
 body {
     height: 120vh;
+    overflow-x: hidden;
     margin: auto
 }
 
@@ -45,6 +46,16 @@ body {
 
 .header .logo {
     float: left;
+    position: relative;
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .search {
@@ -175,11 +186,12 @@ body {
 
 .partner img {
     height: 120px;
+    z-index: -1;
 }
 
 .partner:hover {
     box-shadow: 0 0 5px 3px #888888;
-    z-index: 1;
+    z-index: 0;
 }
 
 .items {
@@ -222,28 +234,6 @@ body {
     justify-content: space-between;
 }
 
-.phone-description,
-.laptop-description,
-.desktop-description {
-    display: none;
-}
-
-.phone:hover+.phone-description,
-.laptop:hover+.laptop-description,
-.desktop:hover+.desktop-description {
-    display: block;
-    color: white;
-    border-radius: 5px;
-    background-color: dodgerblue;
-    padding: 31px 10px;
-}
-
-.phone:hover,
-.laptop:hover,
-.desktop:hover {
-    display: none;
-}
-
 .deals .best-seller {
     position: relative;
     height: 80%;
@@ -253,13 +243,29 @@ body {
     background-color: white;
 }
 
-.best-seller .best-tag {
+.order {
+    display: none;
     position: absolute;
-    left: 0;
-    top: -5;
-    height: 50px;
+    left: 6%;
+    bottom: 40%;
+    width: 88%;
+    padding: 15px 0;
+    z-index: 1;
+    font-size: 18px;
+    background-color: dodgerblue;
+    opacity: 95%;
 }
 
+.order a {
+    text-decoration: none;
+    color: white;
+}
+
+.order:hover {
+    display: inline;
+}
+
+.best-seller .best-tag,
 .best-seller .limited-tag {
     position: absolute;
     left: 0;
@@ -276,8 +282,15 @@ body {
     z-index: -1;
 }
 
+.image:hover+.order {
+    display: inline;
+    background-color: dodgerblue;
+}
+
 .deals .all {
-    height: 150px;
+    position: relative;
+    min-height: 170px;
+    overflow: hidden;
     width: 30%;
     margin: 15px;
     border-radius: 5px;
@@ -286,6 +299,21 @@ body {
 
 .deals .all p {
     font-size: 12px;
+}
+
+.all-book {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    background-color: dodgerblue;
+    padding: 3px;
+    width: 65%;
+    border-radius: 3px;
+}
+
+.all-book a {
+    text-decoration: none;
+    color: white;
 }
 
 .check-text {
