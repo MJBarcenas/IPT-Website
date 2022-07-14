@@ -311,6 +311,10 @@ body {
     border-radius: 3px;
 }
 
+.all-book:hover {
+    box-shadow: 2px 2px 3px 1px #888888;
+}
+
 .all-book a {
     text-decoration: none;
     color: white;
@@ -322,19 +326,41 @@ body {
 }
 
 footer {
-    background-color: dodgerblue;
-    text-align: center;
+    background-color: rgb(0, 114, 255);
     padding: 30px;
     color: white;
     font-size: 12px;
 }
 
-footer div a {
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer .contact img {
+    height: 35px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 50%;
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+
+.footer .follow a {
     font-size: 40px;
     margin-right: 20px;
     color: white;
 }
 
-footer div a:hover {
-    color: rgb(200, 200, 200)
+.footer .follow a:hover {
+    color: rgb(200, 200, 200);
+}
+
+footer p {
+    margin-bottom: -20px;
+    margin-top: 20px;
 }
