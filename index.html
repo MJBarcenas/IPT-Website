@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickTect | Homepage</title>
-    <link rel="stylesheet" href="indexCss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="pictures/Software-PNG-Photos.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="indexJs.js"></script>
+    <link rel="stylesheet" href="indexCss.css">
 </head>
 
 <body>
@@ -28,9 +30,12 @@
 
         <div class="navigation">
             <ul type="none">
-                <li><a href="signUp.html">Sign up</a></li>
-                <li><a href="login.html">Log in</a></li>
+                <li id="signup"><a href="loginORsignUp.html">Sign up</a></li>
+                <li id="login"><a href="loginORsignUp.html">Log in</a></li>
                 <li><a href="aboutUs.html">About us</a></li>
+                <li>
+                    <a id="profile" href="profile.html"></a>
+                </li>
             </ul>
         </div>
 
@@ -110,7 +115,12 @@
                             <center>
                                 <img class="best-tag" src="pictures/best-tag.png" alt="">
                                 <img class="image" src="pictures/phone-repair.jpg" alt="">
-                                <span class="order"><a href="">Book now!</a></span>
+                                <span class="order">
+                                    <p class="butt i1" onclick="hide('i1', 'i11')">Book now</p>
+                                    <label class="best i11" for="book">Choose date:</label>
+                                    <input class="best i11 best-cellphone" type="date" id="book" name="book">
+                                    <input class="best i11 best-butt" onclick="book('Cellphone Repair', 'best-cellphone', '1000')" type="submit">
+                                </span>
                                 <p style="margin-top: -7px; margin-bottom: 7px;">Cellphone Repair</p>
                             </center>
                         </div>
@@ -121,7 +131,12 @@
                             <center>
                                 <img class="best-tag" src="pictures/best-tag.png" alt="">
                                 <img class="image" src="pictures/laptop-repair.jpg" alt="">
-                                <span class="order"><a href="">Book now!</a></span>
+                                <span class="order">
+                                    <p class="butt i2" onclick="hide('i2', 'i22')">Book now</p>
+                                    <label class="best i22" for="book">Choose date:</label>
+                                    <input class="best i22 best-laptop" type="date" id="book" name="book">
+                                    <input class="best i22 best-butt" onclick="book('Laptop Repair', 'best-laptop', '2000')" type="submit">
+                                </span>
                                 <p style="margin-top: -7px; margin-bottom: 7px;">Laptop and Netbook Repair</p>
                             </center>
                         </div>
@@ -132,7 +147,12 @@
                             <center>
                                 <img class="best-tag" src="pictures/best-tag.png" alt="">
                                 <img class="image" src="pictures/desktop-repair.jpg" alt="">
-                                <span class="order"><a href="">Book now!</a></span>
+                                <span class="order">
+                                    <p class="butt i3" onclick="hide('i3', 'i33')">Book now</p>
+                                    <label class="best i33" for="book">Choose date:</label>
+                                    <input class="best i33 best-desktop" type="date" id="book" name="book">
+                                    <input class="best i33 best-butt" onclick="book('Desktop Repair', 'best-desktop', '2500')" type="submit">
+                                </span>
                                 <p style="margin-top: -7px; margin-bottom: 7px;">Desktop Repair</p>
                             </center>
                         </div>
@@ -149,7 +169,10 @@
                             <center>
                                 <img class="limited-tag" src="pictures/limited-tag.png" alt="">
                                 <img class="image" src="pictures/member1.png" alt="">
-                                <span class="order"><a href="">Book now!</a></span>
+                                <span class="order">
+                                    <p class="butt i4" onclick="hide('i4', 'i44')">Avail Now</p>
+                                    <input class="best i44 best-butt" onclick="book('1 Year Membership', 'None', '10000')" type="submit" value="GO">
+                                </span>
                                 <p style="margin-top: -7px; margin-bottom: 7px; font-weight: 500;">1 YEAR MEMBERSHIP</p>
                             </center>
                         </div>
@@ -160,7 +183,10 @@
                             <center>
                                 <img class="limited-tag" src="pictures/limited-tag.png" alt="">
                                 <img class="image" src="pictures/member5.png" alt="">
-                                <span class="order"><a href="">Book now!</a></span>
+                                <span class="order">
+                                    <p class="butt i5" onclick="hide('i5', 'i55')">Avail Now</p>
+                                    <input class="best i55 best-butt" onclick="book('5 Year Membership', 'None', '40000')" type="submit" value="GO">
+                                </span>
                                 <p style="margin-top: -7px; margin-bottom: 7px; font-weight: 500;">5 YEAR MEMBERSHIP</p>
                             </center>
                         </div>
@@ -171,7 +197,10 @@
                             <center>
                                 <img class="limited-tag" src="pictures/limited-tag.png" alt="">
                                 <img class="image" src="pictures/memberLT.png" alt="">
-                                <span class="order"><a href="">Book now!</a></span>
+                                <span class="order">
+                                    <p class="butt i6" onclick="hide('i6', 'i66')">Avail Now</p>
+                                    <input class="best i66 best-butt" onclick="book('LIFE TIME Membership', 'None', '100000')" type="submit" value="GO">
+                                </span>
                                 <p style="margin-top: -7px; margin-bottom: 7px; font-weight: 500;">LIFETIME MEMBERSHIP</p>
                             </center>
                         </div>
@@ -187,7 +216,9 @@
                             <center>
                                 <img class="image" src="pictures/phone-repair.jpg" alt="">
                                 <p style="margin-top: -7px; margin-bottom: 7px;">Cellphone Repair</p>
-                                <p class="all-book"><a href="">Book now!</a></p>
+                                <p class="all-book but 1"><a onclick="hide('1', '11')">Book now!</a></p>
+                                <input class="date 11" type="date" id="book" name="book">
+                                <input class="submit 11" type="submit">
                             </center>
                         </div>
 
@@ -197,7 +228,9 @@
                             <center>
                                 <img class="image" src="pictures/laptop-repair.jpg" alt="">
                                 <p style="margin-top: -7px; margin-bottom: 7px;">Laptop Repair</p>
-                                <p class="all-book"><a href="">Book now!</a></p>
+                                <p class="all-book but 2"><a onclick="hide('2', '22')">Book now!</a></p>
+                                <input class="date 22" type="date" id="book" name="book">
+                                <input class="submit 22" type="submit">
                             </center>
                         </div>
 
@@ -207,7 +240,9 @@
                             <center>
                                 <img class="image" src="pictures/desktop-repair.jpg" alt="">
                                 <p style="margin-top: -7px; margin-bottom: 7px;">Desktop Repair</p>
-                                <p class="all-book"><a href="">Book now!</a></p>
+                                <p class="all-book but 3"><a onclick="hide('3', '33')">Book now!</a></p>
+                                <input class="date 33" type="date" id="book" name="book">
+                                <input class="submit 33" type="submit">
                             </center>
                         </div>
 
@@ -217,7 +252,9 @@
                             <center>
                                 <img class="image" src="pictures/tv-repair.jpg" alt="">
                                 <p style="margin-top: -7px; margin-bottom: 7px;">Television Repair</p>
-                                <p class="all-book"><a href="">Book now!</a></p>
+                                <p class="all-book but 4"><a onclick="hide('4', '44')">Book now!</a></p>
+                                <input class="date 44" type="date" id="book" name="book">
+                                <input class="submit 44" type="submit">
                             </center>
                         </div>
 
@@ -227,7 +264,9 @@
                             <center>
                                 <img class="image" src="pictures/watch-repair.jpg" alt="">
                                 <p style="margin-top: -7px; margin-bottom: 7px;">Smart Watch Repair</p>
-                                <p class="all-book"><a href="">Book now!</a></p>
+                                <p class="all-book but 5"><a onclick="hide('5', '55')">Book now!</a></p>
+                                <input class="date 55" type="date" id="book" name="book">
+                                <input class="submit 55" type="submit">
                             </center>
                         </div>
 
@@ -237,7 +276,9 @@
                             <center>
                                 <img class="image" src="pictures/camera-repair.jpg" alt="">
                                 <p style="margin-top: -7px; margin-bottom: 7px;">Camera Repair</p>
-                                <p class="all-book"><a href="">Book now!</a></p>
+                                <p class="all-book but 6"><a onclick="hide('6', '66')">Book now!</a></p>
+                                <input class="date 66" type="date" id="book" name="book">
+                                <input class="submit 66" type="submit">
                             </center>
                         </div>
 

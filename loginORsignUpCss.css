@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins";
-    color: white;
+    box-sizing: border-box;
 }
 
 body {
@@ -78,10 +78,6 @@ body {
     background-color: white;
 }
 
-#profile {
-    display: none;
-}
-
 .link {
     position: absolute;
     width: 100%;
@@ -92,49 +88,124 @@ body {
 }
 
 .body {
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background-color: white;
+    background-color: #3399FF;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
-    padding-bottom: 5%;
 }
 
-.about {
-    height: fit-content;
-    width: 80%;
-    background-color: dodgerblue;
-    border-radius: 5px;
-    padding: 20px 10px;
+.content {
+    min-width: 45%;
 }
 
-.about h1 {
-    font-weight: 500;
+.tablinks {
+    border-radius: 5px 5px 0 0;
+    width: 110px;
+    margin-right: -5px;
+    margin-bottom: -10px;
+    border: none;
+    background: white;
 }
 
-.sub {
-    background-color: rgb(245, 245, 245);
-    border-radius: 5px;
-    margin-top: 20px;
-    padding-bottom: 5px;
-}
-
-.sub p,
-.sub h3 {
+.tab button.active {
+    background-color: white;
     color: black;
-    margin: 10px;
 }
 
-.sub h3 {
+.tab button {
+    background-color: rgb(220, 220, 220);
+    color: rgb(100, 100, 100);
+}
+
+.container {
+    display: none;
+    max-width: 700px;
     width: 100%;
-    text-align: center;
-    padding-top: 5px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 0 5px 5px 5px;
+    margin-top: -1px;
 }
 
-.sub p {
-    text-align: justify;
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 150px;
+    background: dodgerblue;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+}
+
+.user-details .input-box input:focus {
+    border-color: dodgerblue;
+}
+
+#first {
+    background-color: white;
+}
+
+#login {
+    display: block;
+}
+
+form .button {
+    height: 45px;
+    margin: 5px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+form .button input:hover {
+    background-color: orange;
+    color: black;
 }
 
 footer {
@@ -162,14 +233,14 @@ footer {
     margin-right: 5px;
 }
 
-.footer .follow i:hover {
-    color: rgb(200, 200, 200);
-}
-
 .footer .follow a {
     font-size: 40px;
     margin-right: 20px;
     color: white;
+}
+
+.footer .follow a:hover {
+    color: rgb(200, 200, 200)
 }
 
 footer p {

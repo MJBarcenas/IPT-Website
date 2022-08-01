@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTech | Login</title>
+    <link rel="shortcut icon" href="pictures/Software-PNG-Photos.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="loginORsignUpCss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="loginORsignUpJs.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><span class="link"></span></a>
+            <img src="pictures/Software-PNG-Photos.png" alt="">
+            <span>QuickTech</span>
+        </div>
+
+        <div class="navigation">
+            <ul type="none">
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="content">
+            <div class="tab">
+                <button id="first" class="tablinks" onclick="openTab(event, 'login')">Login</button>
+                <button class="tablinks" onclick="openTab(event, 'signup')">Sign up</button>
+            </div>
+            <div id="login" class="container">
+                <div class="title">Log in</div>
+                <form method="post" onsubmit="return false" enctype="multipart/form-data">
+                    <div class="user-details">
+
+                        <div class="input-box">
+                            <span class="details">Username</span>
+                            <input type="text" id="Lfullname" name="Ffname" placeholder="Enter your username or email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="text" id="Lpassword" name="Flname" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" onclick="check_user()" value="Log in" name="Fresh">
+                    </div>
+
+                </form>
+            </div>
+
+            <div id="signup" class="container">
+                <div class="title">Sign up</div>
+                <form method="post" onsubmit="return false" enctype="multipart/form-data">
+                    <div class="user-details">
+
+                        <div class="input-box">
+                            <span class="details">Full Name</span>
+                            <input type="text" id="Sfullname" name="Y24fname" placeholder="Enter your first name" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Address</span>
+                            <input type="text" id="Saddress" name="Y24email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Number</span>
+                            <input type="text" id="Snumber" name="Y24no" placeholder="Enter your number" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="text" id="Spassword" name="Y24add" placeholder="Enter your address" required>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" onclick="signup()" value="Sign up" name="Y24">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="like" style="text-align: center;">
+                <p style="font-size: 18px;">Like what you see?</p>
+                <br>
+                <p>Then give us a call and we'll chat through what you need.</p>
+                <p>We've got coffee, tea, and buscuits!</p>
+                <p style="font-weight: 500">(if you're quick)</p>
+            </div>
+            <div class="contact">
+                <img src="pictures/Software-PNG-Photos.png" alt="">
+                <span style="font-size: 18px;">CONTACT US</span>
+                <p><i class="fa fa-comments"></i> (+63) 9366296799</p>
+                <p><a href="https://www.imaqtchael@gmail.com" style="text-decoration: none; color: white;"><i class="fa fa-envelope"></i> quicktechph@gmail.com</a></p>
+                <p><i class="fa fa-home"></i> QuickTech Building, Phase 1a Sub-Urban Village Brgy. San Jose, Rodriguez, Rizal, Philippines</p>
+            </div>
+            <div class="follow">
+                <p style="font-size: 18px;">FOLLOW US</p>
+                <br>
+                <a href="https://www.facebook.com/" target="_blank" title="Visit our Facebook Page"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" title="Visit our Instagram account"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank" title="Visis our Twitter account"><i class="fa fa-twitter-square"></i></a>
+
+            </div>
+        </div>
+        <br>
+        <center>
+            <p>@2022 QuickTech. All Rights Reserved.</p>
+        </center>
+    </footer>
+
+</body>
+
+</html>

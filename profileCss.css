@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins";
-    color: white;
 }
 
 body {
@@ -78,10 +77,6 @@ body {
     background-color: white;
 }
 
-#profile {
-    display: none;
-}
-
 .link {
     position: absolute;
     width: 100%;
@@ -102,7 +97,7 @@ body {
     padding-bottom: 5%;
 }
 
-.about {
+.booking {
     height: fit-content;
     width: 80%;
     background-color: dodgerblue;
@@ -110,31 +105,100 @@ body {
     padding: 20px 10px;
 }
 
-.about h1 {
-    font-weight: 500;
-}
-
 .sub {
-    background-color: rgb(245, 245, 245);
+    background-color: white;
     border-radius: 5px;
     margin-top: 20px;
     padding-bottom: 5px;
 }
 
-.sub p,
-.sub h3 {
+.profile {
+    height: 400px;
+}
+
+.profile .info {
+    float: left;
+    width: 40%;
+}
+
+.profile .info>p {
     color: black;
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-.sub h3 {
-    width: 100%;
+.profile .info div label,
+.profile .info div input {
+    color: black;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.profile .info #number,
+.profile .info #address,
+.profile .infor #name {
+    font-size: 16px;
+}
+
+.info .picture {
+    float: right;
+    height: 100%;
+    width: 25%;
+}
+
+.picture .logout,
+.picture .update {
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
     text-align: center;
-    padding-top: 5px;
+    margin-top: 5px;
 }
 
-.sub p {
-    text-align: justify;
+.picture .logout {
+    background-color: red;
+}
+
+.picture .update {
+    background-color: green;
+}
+
+.picture .logout:hover {
+    color: black;
+    background-color: rgb(230, 0, 0);
+}
+
+.picture .update:hover {
+    color: black;
+    background-color: rgb(0, 230, 0);
+}
+
+#bookings {
+    float: right;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+}
+
+#bookings table {
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+#bookings table,
+#bookings th,
+#bookings td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+#bookings th,
+#bookings td {
+    background-color: rgba(30, 144, 255, .5);
+}
+
+#bookings table {
+    width: 100%;
 }
 
 footer {

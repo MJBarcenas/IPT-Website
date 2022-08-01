@@ -18,7 +18,7 @@ body {
     width: 100%;
     font-weight: 500;
     font-size: 20px;
-    background-color: dodgerblue;
+    background: linear-gradient(0deg, #333399, #3399FF);
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -117,8 +117,16 @@ body {
     color: white;
 }
 
+.header ul li:hover>a {
+    color: black;
+}
+
 .header ul li:hover {
-    background-color: darkblue;
+    background-color: white;
+}
+
+#profile {
+    display: none;
 }
 
 .background {
@@ -256,13 +264,22 @@ body {
     opacity: 95%;
 }
 
-.order a {
+.order {
     text-decoration: none;
     color: white;
 }
 
 .order:hover {
     display: inline;
+}
+
+.best {
+    display: none;
+}
+
+.best-butt {
+    padding: 3px 8px;
+    margin-top: 5px;
 }
 
 .best-seller .best-tag,
@@ -317,6 +334,23 @@ body {
 
 .all-book a {
     text-decoration: none;
+    color: white;
+}
+
+.date,
+.submit {
+    display: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.submit {
+    padding: 0 5px;
+    border: none;
+}
+
+.submit:hover {
+    background-color: dodgerblue;
     color: white;
 }
 
